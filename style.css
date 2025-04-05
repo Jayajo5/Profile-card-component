@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Kumbh Sans", sans-serif;
+    background-color: hsl(185, 75%, 39%);
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+html,body{
+    overflow: hidden;
+    position: relative;
+}
+
+/*------------------Background------------------------------------*/
+
+.bg-pattern-top {
+    max-width: 100%;
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    transform: translate(-20%, -50%);
+    overflow: hidden;
+   
+}
+
+
+ .bg-pattern-bottom {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    overflow: hidden;
+}
+
+/*---------------Breakpoints-----------------------*/
+
+@media screen and (max-width:1450px){
+    .bg-pattern-top {
+        left: -10%;
+        max-width: 1200px;
+       
+    }
+    .bg-pattern-top img{
+        width: 100%;
+        height: auto;
+    }
+}    
+
+@media screen and (max-width:1000px){
+    .bg-pattern-top {
+        top: 10%;
+        max-width: 800px;
+    }
+
+    .bg-pattern-top img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .bg-pattern-top {
+        left: -60%;
+    }
+    .bg-pattern-bottom {
+        top: 40%;
+    }
+
+}
+
+/*-----------------------Profile Card-----------------------------------*/
+
+.card-container{
+    background-color: white;
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    position: relative;
+    margin: 0 20px;
+}
+
+.card-container img{
+    max-width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    
+}
+
+.card-container .vector-img{
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 100%;
+    border: 5px solid white;
+    position: absolute;
+    top: 25%;
+    left: 35%;
+}
+
+.name-state{
+    text-align: center;
+    margin-top: 50px;
+   
+ }
+
+ .name-state h5{
+    color: hsl(227, 10%, 46%);
+ }
+
+ .name-state h4{
+    color: hsl(229, 23%, 23%);
+    padding: 10px;
+ }
+
+.number{
+    color: hsl(227, 10%, 46%);
+ }
+
+ hr{
+    height: 1px;
+    background-color: hsl(0, 2%, 89%);
+    border: none;
+    margin: 20px 0;
+ }
+
+ .grid-container{
+    margin: 10px;
+    padding: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+ }
+
+ .grid-container p{
+    letter-spacing: 1px;
+    margin-top: 5px;
+    font-size: 10px;
+    color: hsl(227, 10%, 46%);
+ }
+
+ .grid-container h4{
+    color: hsl(229, 23%, 23%) ;
+ }
+
